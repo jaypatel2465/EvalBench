@@ -4,11 +4,6 @@
 
 ### Self-hosted LLM Regression & Quality Intelligence Platform
 
-[![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![React](https://img.shields.io/badge/React-TypeScript-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/jaypatel2465/EvalBench/pulls)
 
 *Benchmark versioned product behavior · Combine deterministic checks with LLM-as-judge · Detect regressions with uncertainty intervals · Gate deployments through CI*
 
