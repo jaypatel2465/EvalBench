@@ -1,0 +1,32 @@
+name: EvalBench quality gate
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install EvalBench
+        run: python -m pip install -e ".[test]"
+      - name: Run automated tests
+        run: pytest --junitxml=artifacts/tests.xml
+      - name: Execute baseline and candidate evaluations
+        run: python scripts/seed_demo.py
+      - name: Apply regression policy
+        run: python scripts/ci_gate.py --output artifacts/quality-gate.json
+      - name: Upload machine-readable evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evalbench-quality-gate
+          path: artifacts/
+

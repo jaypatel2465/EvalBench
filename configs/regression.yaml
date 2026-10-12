@@ -1,0 +1,10 @@
+quality_threshold:
+  pass_rate_drop: 0.05
+latency_threshold:
+  p95_increase: 0.20
+cost_threshold:
+  increase: 0.25
+bootstrap:
+  confidence: 0.95
+  iterations: 2000
+

@@ -1,0 +1,46 @@
+models:
+  - name: mock-baseline
+    provider: mock
+    model: mock-sec-qa-v1
+    parameters:
+      degraded: false
+      latency_ms: 2
+    pricing:
+      input_per_million: 0
+      output_per_million: 0
+  - name: mock-degraded
+    provider: mock
+    model: mock-sec-qa-v1-degraded
+    parameters:
+      degraded: true
+      latency_ms: 3
+    pricing:
+      input_per_million: 0
+      output_per_million: 0
+  - name: openai-default
+    provider: openai
+    model: gpt-5-mini
+    parameters:
+      temperature: 0
+    pricing: {}
+  - name: anthropic-default
+    provider: anthropic
+    model: claude-sonnet-4-5
+    parameters:
+      temperature: 0
+    pricing: {}
+  - name: gemini-default
+    provider: google
+    model: gemini-2.5-flash
+    parameters:
+      temperature: 0
+    pricing: {}
+  - name: ollama-local
+    provider: ollama
+    model: llama3.2
+    parameters:
+      temperature: 0
+    pricing:
+      input_per_million: 0
+      output_per_million: 0
+

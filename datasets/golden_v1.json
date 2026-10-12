@@ -1,0 +1,2058 @@
+{
+  "metadata": {
+    "name": "sec-company-qa",
+    "version": "v1",
+    "description": "75-case demo corpus grounded in curated public annual-filing excerpts.",
+    "source": "Public company annual reports and SEC filings; curated for the EvalBench demo.",
+    "created_at": "2026-08-18T00:00:00+00:00",
+    "license": "Underlying filings are public; EvalBench annotations are MIT."
+  },
+  "cases": [
+    {
+      "id": "sec-001",
+      "category": "factual",
+      "input": "What were Apple's total net sales in fiscal 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$383.285 billion.",
+      "required_facts": [
+        "$383.285 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "apple-2023-financials"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-002",
+      "category": "factual",
+      "input": "Report Apple's fiscal 2023 net income.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$96.995 billion.",
+      "required_facts": [
+        "$96.995 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "apple-2023-financials"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-003",
+      "category": "retrieval",
+      "input": "Which Apple geographic segment had $162.560 billion of fiscal 2023 sales?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Americas.",
+      "required_facts": [
+        "Americas"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "apple-2023-financials"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-004",
+      "category": "citation_correctness",
+      "input": "How much revenue did Apple report in Greater China in 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$72.559 billion.",
+      "required_facts": [
+        "$72.559 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "apple-2023-financials"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-005",
+      "category": "reasoning",
+      "input": "Compare Apple's Americas and Europe sales for fiscal 2023.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Americas was $162.560 billion versus Europe's $94.294 billion.",
+      "required_facts": [
+        "$162.560 billion",
+        "$94.294 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "reasoning"
+      ],
+      "expected_citations": [
+        "apple-2023-financials"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-financials",
+        "human_validation_subset": true
+      }
+    },
+    {
+      "id": "sec-006",
+      "category": "factual",
+      "input": "What were Apple's fiscal 2023 services net sales?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$85.200 billion.",
+      "required_facts": [
+        "$85.200 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "apple-2023-products"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-products",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-007",
+      "category": "retrieval",
+      "input": "How much revenue did the iPhone generate for Apple in fiscal 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$200.583 billion.",
+      "required_facts": [
+        "$200.583 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "apple-2023-products"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-products",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-008",
+      "category": "citation_correctness",
+      "input": "State Apple's fiscal 2023 products and services sales separately.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Products were $298.085 billion; services were $85.200 billion.",
+      "required_facts": [
+        "$298.085 billion",
+        "$85.200 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "apple-2023-products"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-products",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-009",
+      "category": "reasoning",
+      "input": "Did Mac or iPad have higher sales in Apple's fiscal 2023? Include both values.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Mac was higher: $29.357 billion versus $28.300 billion for iPad.",
+      "required_facts": [
+        "$29.357 billion",
+        "$28.300 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "reasoning"
+      ],
+      "expected_citations": [
+        "apple-2023-products"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-products",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-010",
+      "category": "adversarial",
+      "input": "Answer only from the filing: were Apple's fiscal 2023 services sales $100 billion?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "No. They were $85.200 billion.",
+      "required_facts": [
+        "$85.200 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "adversarial"
+      ],
+      "expected_citations": [
+        "apple-2023-products"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-products",
+        "human_validation_subset": true
+      }
+    },
+    {
+      "id": "sec-011",
+      "category": "factual",
+      "input": "How many full-time equivalent employees did Apple have on September 30, 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Approximately 161,000.",
+      "required_facts": [
+        "161,000"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "apple-2023-operations"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-012",
+      "category": "retrieval",
+      "input": "What was Apple's research and development expense in fiscal 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$29.915 billion.",
+      "required_facts": [
+        "$29.915 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "apple-2023-operations"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-013",
+      "category": "citation_correctness",
+      "input": "Provide Apple's 2022 and 2023 R&D expenses.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$26.251 billion in 2022 and $29.915 billion in 2023.",
+      "required_facts": [
+        "$26.251 billion",
+        "$29.915 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "apple-2023-operations"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-014",
+      "category": "reasoning",
+      "input": "Did Apple's R&D expense rise from 2022 to 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Yes, from $26.251 billion to $29.915 billion.",
+      "required_facts": [
+        "$26.251 billion",
+        "$29.915 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "reasoning"
+      ],
+      "expected_citations": [
+        "apple-2023-operations"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-015",
+      "category": "refusal",
+      "input": "What was Apple's exact contractor headcount in 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "The excerpt does not state contractor headcount.",
+      "required_facts": [
+        "does not state"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "refusal",
+      "difficulty": "hard",
+      "tags": [
+        "apple",
+        "sec-filing",
+        "refusal"
+      ],
+      "expected_citations": [
+        "apple-2023-operations"
+      ],
+      "metadata": {
+        "company": "Apple",
+        "filing": "2023 Form 10-K",
+        "source_id": "apple-2023-operations",
+        "human_validation_subset": true
+      }
+    },
+    {
+      "id": "sec-016",
+      "category": "factual",
+      "input": "What revenue did Microsoft report for fiscal 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$211.915 billion.",
+      "required_facts": [
+        "$211.915 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "microsoft-2023-financials"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-017",
+      "category": "retrieval",
+      "input": "What was Microsoft's fiscal 2023 net income?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$72.361 billion.",
+      "required_facts": [
+        "$72.361 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "microsoft-2023-financials"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-018",
+      "category": "citation_correctness",
+      "input": "Give Microsoft's fiscal 2023 operating income with a citation.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$88.523 billion.",
+      "required_facts": [
+        "$88.523 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "microsoft-2023-financials"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-019",
+      "category": "formatting",
+      "input": "State Microsoft's diluted EPS for fiscal 2023.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$9.68.",
+      "required_facts": [
+        "$9.68"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "formatting"
+      ],
+      "expected_citations": [
+        "microsoft-2023-financials"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-020",
+      "category": "reasoning",
+      "input": "Was Microsoft's operating income higher than net income in fiscal 2023? Include both.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Yes: $88.523 billion versus $72.361 billion.",
+      "required_facts": [
+        "$88.523 billion",
+        "$72.361 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "reasoning"
+      ],
+      "expected_citations": [
+        "microsoft-2023-financials"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-financials",
+        "human_validation_subset": true
+      }
+    },
+    {
+      "id": "sec-021",
+      "category": "factual",
+      "input": "What was Microsoft's Intelligent Cloud revenue in fiscal 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$87.907 billion.",
+      "required_facts": [
+        "$87.907 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "microsoft-2023-segments"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-segments",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-022",
+      "category": "retrieval",
+      "input": "Which Microsoft segment was largest by fiscal 2023 revenue?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Intelligent Cloud.",
+      "required_facts": [
+        "Intelligent Cloud"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "microsoft-2023-segments"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-segments",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-023",
+      "category": "citation_correctness",
+      "input": "Cite the fiscal 2023 revenue for More Personal Computing.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$54.734 billion.",
+      "required_facts": [
+        "$54.734 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "microsoft-2023-segments"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-segments",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-024",
+      "category": "reasoning",
+      "input": "Compare Microsoft's Productivity and Business Processes and Intelligent Cloud revenue.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$69.274 billion versus $87.907 billion.",
+      "required_facts": [
+        "$69.274 billion",
+        "$87.907 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "reasoning"
+      ],
+      "expected_citations": [
+        "microsoft-2023-segments"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-segments",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-025",
+      "category": "adversarial",
+      "input": "Did More Personal Computing exceed $60 billion in fiscal 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "No; it was $54.734 billion.",
+      "required_facts": [
+        "$54.734 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "adversarial"
+      ],
+      "expected_citations": [
+        "microsoft-2023-segments"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-segments",
+        "human_validation_subset": true
+      }
+    },
+    {
+      "id": "sec-026",
+      "category": "factual",
+      "input": "How many people did Microsoft employ at June 30, 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Approximately 221,000.",
+      "required_facts": [
+        "221,000"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "microsoft-2023-people"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-people",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-027",
+      "category": "retrieval",
+      "input": "How many Microsoft employees were in the United States?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Approximately 120,000.",
+      "required_facts": [
+        "120,000"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "microsoft-2023-people"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-people",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-028",
+      "category": "citation_correctness",
+      "input": "How many Microsoft employees were international in 2023? Cite the source.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Approximately 101,000.",
+      "required_facts": [
+        "101,000"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "microsoft-2023-people"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-people",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-029",
+      "category": "factual",
+      "input": "State Microsoft's fiscal 2023 R&D expense.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$27.195 billion.",
+      "required_facts": [
+        "$27.195 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "microsoft-2023-people"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-people",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-030",
+      "category": "reasoning",
+      "input": "Do the disclosed US and international employee counts reconcile to the total?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Yes. 120,000 plus 101,000 equals 221,000.",
+      "required_facts": [
+        "120,000",
+        "101,000",
+        "221,000"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "microsoft",
+        "sec-filing",
+        "reasoning"
+      ],
+      "expected_citations": [
+        "microsoft-2023-people"
+      ],
+      "metadata": {
+        "company": "Microsoft",
+        "filing": "2023 Form 10-K",
+        "source_id": "microsoft-2023-people",
+        "human_validation_subset": true
+      }
+    },
+    {
+      "id": "sec-031",
+      "category": "factual",
+      "input": "What was NVIDIA's revenue in fiscal 2024?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$60.922 billion.",
+      "required_facts": [
+        "$60.922 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "nvidia-2024-financials"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-032",
+      "category": "retrieval",
+      "input": "What net income did NVIDIA report for fiscal 2024?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$29.760 billion.",
+      "required_facts": [
+        "$29.760 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "nvidia-2024-financials"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-033",
+      "category": "citation_correctness",
+      "input": "Provide NVIDIA's fiscal 2024 diluted EPS with a citation.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$11.93.",
+      "required_facts": [
+        "$11.93"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "nvidia-2024-financials"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-034",
+      "category": "reasoning",
+      "input": "Compare NVIDIA revenue in fiscal 2023 and fiscal 2024.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$26.974 billion in 2023 and $60.922 billion in 2024.",
+      "required_facts": [
+        "$26.974 billion",
+        "$60.922 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "reasoning"
+      ],
+      "expected_citations": [
+        "nvidia-2024-financials"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-035",
+      "category": "adversarial",
+      "input": "Did NVIDIA's fiscal 2024 revenue decline year over year?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "No; it rose from $26.974 billion to $60.922 billion.",
+      "required_facts": [
+        "$26.974 billion",
+        "$60.922 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "adversarial"
+      ],
+      "expected_citations": [
+        "nvidia-2024-financials"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-financials",
+        "human_validation_subset": true
+      }
+    },
+    {
+      "id": "sec-036",
+      "category": "factual",
+      "input": "What was NVIDIA Compute & Networking revenue in fiscal 2024?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$47.405 billion.",
+      "required_facts": [
+        "$47.405 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "nvidia-2024-platforms"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-platforms",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-037",
+      "category": "retrieval",
+      "input": "What was NVIDIA Graphics revenue in fiscal 2024?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$13.517 billion.",
+      "required_facts": [
+        "$13.517 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "nvidia-2024-platforms"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-platforms",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-038",
+      "category": "citation_correctness",
+      "input": "Cite NVIDIA's fiscal 2024 Data Center revenue.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$47.525 billion.",
+      "required_facts": [
+        "$47.525 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "nvidia-2024-platforms"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-platforms",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-039",
+      "category": "reasoning",
+      "input": "Compare NVIDIA's fiscal 2024 Data Center and Gaming revenue.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$47.525 billion versus $10.447 billion.",
+      "required_facts": [
+        "$47.525 billion",
+        "$10.447 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "reasoning"
+      ],
+      "expected_citations": [
+        "nvidia-2024-platforms"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-platforms",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-040",
+      "category": "adversarial",
+      "input": "Was NVIDIA Gaming revenue above $15 billion in fiscal 2024?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "No; it was $10.447 billion.",
+      "required_facts": [
+        "$10.447 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "adversarial"
+      ],
+      "expected_citations": [
+        "nvidia-2024-platforms"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-platforms",
+        "human_validation_subset": true
+      }
+    },
+    {
+      "id": "sec-041",
+      "category": "factual",
+      "input": "How many employees did NVIDIA have at January 28, 2024?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Approximately 29,600.",
+      "required_facts": [
+        "29,600"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "nvidia-2024-operations"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-042",
+      "category": "retrieval",
+      "input": "In how many countries did NVIDIA have employees?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "36 countries.",
+      "required_facts": [
+        "36 countries"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "nvidia-2024-operations"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-043",
+      "category": "citation_correctness",
+      "input": "State NVIDIA's fiscal 2024 R&D expense with a citation.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$8.675 billion.",
+      "required_facts": [
+        "$8.675 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "nvidia-2024-operations"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-044",
+      "category": "instruction_following",
+      "input": "Name the two foundries identified in the excerpt.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "TSMC and Samsung.",
+      "required_facts": [
+        "TSMC",
+        "Samsung"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "instruction_following"
+      ],
+      "expected_citations": [
+        "nvidia-2024-operations"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-045",
+      "category": "adversarial",
+      "input": "Does the excerpt say NVIDIA manufactures every wafer in its own fabs?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "No. It uses foundries including TSMC and Samsung.",
+      "required_facts": [
+        "TSMC",
+        "Samsung"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "hard",
+      "tags": [
+        "nvidia",
+        "sec-filing",
+        "adversarial"
+      ],
+      "expected_citations": [
+        "nvidia-2024-operations"
+      ],
+      "metadata": {
+        "company": "NVIDIA",
+        "filing": "2024 Form 10-K",
+        "source_id": "nvidia-2024-operations",
+        "human_validation_subset": true
+      }
+    },
+    {
+      "id": "sec-046",
+      "category": "factual",
+      "input": "What were Alphabet's revenues in 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$307.394 billion.",
+      "required_facts": [
+        "$307.394 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "alphabet-2023-financials"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-047",
+      "category": "retrieval",
+      "input": "What was Alphabet's 2023 net income?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$73.795 billion.",
+      "required_facts": [
+        "$73.795 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "alphabet-2023-financials"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-048",
+      "category": "citation_correctness",
+      "input": "Give Alphabet's 2023 operating income with a citation.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$84.293 billion.",
+      "required_facts": [
+        "$84.293 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "alphabet-2023-financials"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-049",
+      "category": "formatting",
+      "input": "What was Alphabet's diluted EPS for 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$5.80.",
+      "required_facts": [
+        "$5.80"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "formatting"
+      ],
+      "expected_citations": [
+        "alphabet-2023-financials"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-050",
+      "category": "reasoning",
+      "input": "Was Alphabet operating income greater than net income in 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Yes: $84.293 billion versus $73.795 billion.",
+      "required_facts": [
+        "$84.293 billion",
+        "$73.795 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "reasoning"
+      ],
+      "expected_citations": [
+        "alphabet-2023-financials"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-financials",
+        "human_validation_subset": true
+      }
+    },
+    {
+      "id": "sec-051",
+      "category": "factual",
+      "input": "What were Alphabet's Google advertising revenues in 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$237.855 billion.",
+      "required_facts": [
+        "$237.855 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "alphabet-2023-segments"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-segments",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-052",
+      "category": "retrieval",
+      "input": "What revenue did Google Cloud report for 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$33.088 billion.",
+      "required_facts": [
+        "$33.088 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "alphabet-2023-segments"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-segments",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-053",
+      "category": "citation_correctness",
+      "input": "Cite Google Cloud's 2023 operating income.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$1.716 billion.",
+      "required_facts": [
+        "$1.716 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "alphabet-2023-segments"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-segments",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-054",
+      "category": "reasoning",
+      "input": "Did Google Cloud report an operating profit or loss in 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "An operating profit of $1.716 billion.",
+      "required_facts": [
+        "$1.716 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "reasoning"
+      ],
+      "expected_citations": [
+        "alphabet-2023-segments"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-segments",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-055",
+      "category": "adversarial",
+      "input": "Were Alphabet's 2023 advertising revenues below Google Cloud revenues?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "No: advertising was $237.855 billion versus Cloud's $33.088 billion.",
+      "required_facts": [
+        "$237.855 billion",
+        "$33.088 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "adversarial"
+      ],
+      "expected_citations": [
+        "alphabet-2023-segments"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-segments",
+        "human_validation_subset": true
+      }
+    },
+    {
+      "id": "sec-056",
+      "category": "factual",
+      "input": "How many employees did Alphabet have at the end of 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "182,502.",
+      "required_facts": [
+        "182,502"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "alphabet-2023-operations"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-057",
+      "category": "retrieval",
+      "input": "What were Alphabet's 2023 purchases of property and equipment?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$32.251 billion.",
+      "required_facts": [
+        "$32.251 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "alphabet-2023-operations"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-058",
+      "category": "citation_correctness",
+      "input": "Cite Alphabet's year-end 2023 employee count.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "182,502 employees.",
+      "required_facts": [
+        "182,502"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "alphabet-2023-operations"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-059",
+      "category": "instruction_following",
+      "input": "What type of investment does Alphabet expect to remain an important use of capital?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Technical infrastructure investment.",
+      "required_facts": [
+        "technical infrastructure"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "instruction_following"
+      ],
+      "expected_citations": [
+        "alphabet-2023-operations"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-060",
+      "category": "refusal",
+      "input": "What exact share of Alphabet employees worked on AI in 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "The excerpt does not state that share.",
+      "required_facts": [
+        "does not state"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "refusal",
+      "difficulty": "hard",
+      "tags": [
+        "alphabet",
+        "sec-filing",
+        "refusal"
+      ],
+      "expected_citations": [
+        "alphabet-2023-operations"
+      ],
+      "metadata": {
+        "company": "Alphabet",
+        "filing": "2023 Form 10-K",
+        "source_id": "alphabet-2023-operations",
+        "human_validation_subset": true
+      }
+    },
+    {
+      "id": "sec-061",
+      "category": "factual",
+      "input": "What were Amazon's net sales in 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$574.785 billion.",
+      "required_facts": [
+        "$574.785 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "amazon-2023-financials"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-062",
+      "category": "retrieval",
+      "input": "What net income did Amazon report for 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$30.425 billion.",
+      "required_facts": [
+        "$30.425 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "amazon-2023-financials"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-063",
+      "category": "citation_correctness",
+      "input": "Provide Amazon's 2023 operating income with a citation.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$36.852 billion.",
+      "required_facts": [
+        "$36.852 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "amazon-2023-financials"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-064",
+      "category": "reasoning",
+      "input": "Compare Amazon net sales in 2022 and 2023.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$513.983 billion in 2022 and $574.785 billion in 2023.",
+      "required_facts": [
+        "$513.983 billion",
+        "$574.785 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "reasoning"
+      ],
+      "expected_citations": [
+        "amazon-2023-financials"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-financials",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-065",
+      "category": "adversarial",
+      "input": "Did Amazon's net sales fall in 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "No; they rose from $513.983 billion to $574.785 billion.",
+      "required_facts": [
+        "$513.983 billion",
+        "$574.785 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "adversarial"
+      ],
+      "expected_citations": [
+        "amazon-2023-financials"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-financials",
+        "human_validation_subset": true
+      }
+    },
+    {
+      "id": "sec-066",
+      "category": "factual",
+      "input": "What were AWS net sales in 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$90.757 billion.",
+      "required_facts": [
+        "$90.757 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "amazon-2023-segments"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-segments",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-067",
+      "category": "retrieval",
+      "input": "What operating income did AWS report in 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$24.631 billion.",
+      "required_facts": [
+        "$24.631 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "amazon-2023-segments"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-segments",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-068",
+      "category": "citation_correctness",
+      "input": "Cite Amazon North America net sales for 2023.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$352.828 billion.",
+      "required_facts": [
+        "$352.828 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "amazon-2023-segments"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-segments",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-069",
+      "category": "reasoning",
+      "input": "Compare Amazon's North America and International net sales in 2023.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$352.828 billion versus $131.200 billion.",
+      "required_facts": [
+        "$352.828 billion",
+        "$131.200 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "reasoning"
+      ],
+      "expected_citations": [
+        "amazon-2023-segments"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-segments",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-070",
+      "category": "adversarial",
+      "input": "Were 2023 AWS net sales higher than North America net sales?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "No: AWS was $90.757 billion and North America was $352.828 billion.",
+      "required_facts": [
+        "$90.757 billion",
+        "$352.828 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "adversarial"
+      ],
+      "expected_citations": [
+        "amazon-2023-segments"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-segments",
+        "human_validation_subset": true
+      }
+    },
+    {
+      "id": "sec-071",
+      "category": "factual",
+      "input": "How many full-time and part-time employees did Amazon have at year-end 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Approximately 1,525,000.",
+      "required_facts": [
+        "1,525,000"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "factual"
+      ],
+      "expected_citations": [
+        "amazon-2023-operations"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-072",
+      "category": "retrieval",
+      "input": "What were Amazon's 2023 cash capital expenditures?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "$48.145 billion.",
+      "required_facts": [
+        "$48.145 billion"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "easy",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "retrieval"
+      ],
+      "expected_citations": [
+        "amazon-2023-operations"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-073",
+      "category": "citation_correctness",
+      "input": "Cite Amazon's December 31, 2023 employee count.",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Approximately 1,525,000.",
+      "required_facts": [
+        "1,525,000"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "citation_correctness"
+      ],
+      "expected_citations": [
+        "amazon-2023-operations"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-074",
+      "category": "instruction_following",
+      "input": "Which worker types are included in Amazon's disclosed employee count?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "Full-time and part-time employees.",
+      "required_facts": [
+        "full-time",
+        "part-time"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "text",
+      "difficulty": "medium",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "instruction_following"
+      ],
+      "expected_citations": [
+        "amazon-2023-operations"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-operations",
+        "human_validation_subset": false
+      }
+    },
+    {
+      "id": "sec-075",
+      "category": "refusal",
+      "input": "How many Amazon delivery contractors were employed at year-end 2023?",
+      "expected_behavior": "Answer only from the cited filing evidence; do not add unsupported claims.",
+      "reference_answer": "The excerpt does not state that number.",
+      "required_facts": [
+        "does not state"
+      ],
+      "forbidden_claims": [],
+      "expected_format": "refusal",
+      "difficulty": "hard",
+      "tags": [
+        "amazon",
+        "sec-filing",
+        "refusal"
+      ],
+      "expected_citations": [
+        "amazon-2023-operations"
+      ],
+      "metadata": {
+        "company": "Amazon",
+        "filing": "2023 Form 10-K",
+        "source_id": "amazon-2023-operations",
+        "human_validation_subset": true
+      }
+    }
+  ]
+}

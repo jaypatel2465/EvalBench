@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "evalbench"
+version = "0.1.0"
+description = "Self-hosted LLM product regression and quality intelligence"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "alembic>=1.14,<2",
+  "fastapi>=0.115,<1",
+  "httpx>=0.28,<1",
+  "pydantic>=2.10,<3",
+  "pydantic-settings>=2.7,<3",
+  "python-dotenv>=1.0,<2",
+  "pyyaml>=6.0,<7",
+  "sqlalchemy>=2.0,<3",
+  "typer>=0.15,<1",
+  "uvicorn[standard]>=0.34,<1",
+]
+
+[project.optional-dependencies]
+postgres = ["psycopg[binary]>=3.2,<4"]
+test = ["pytest>=8.3,<9", "pytest-asyncio>=0.25,<1", "coverage>=7.6,<8"]
+judge = ["deepeval>=3,<4"]
+
+[project.scripts]
+evalbench = "app.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["backend/app", "target_app"]
+
+[tool.pytest.ini_options]
+pythonpath = ["backend", "."]
+testpaths = ["backend/tests"]
+asyncio_mode = "auto"
+addopts = "--basetemp=.pytest_tmp"
+
+[tool.coverage.run]
+source = ["backend/app"]

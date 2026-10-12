@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base { body { @apply m-0 min-w-[320px] font-sans antialiased; } button, input, select { @apply outline-none; } }
+@layer components {
+  .panel { @apply rounded-lg border border-slate-200 bg-white shadow-[0_1px_2px_rgba(15,23,42,.03)]; }
+  .panel-title { @apply text-sm font-semibold text-slate-900; }
+  .metric-label { @apply text-[11px] font-medium uppercase tracking-[.08em] text-slate-500; }
+  .button { @apply inline-flex items-center justify-center gap-2 rounded-md bg-slate-950 px-3.5 py-2 text-sm font-medium text-white transition hover:bg-slate-800; }
+  .button-secondary { @apply inline-flex items-center justify-center gap-2 rounded-md border border-slate-200 bg-white px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50; }
+  .input { @apply rounded-md border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus:border-slate-400; }
+  .badge { @apply inline-flex rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide; }
+}

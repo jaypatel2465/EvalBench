@@ -1,0 +1,60 @@
+{
+  "baseline": {
+    "run_id": "4850904b-d064-417c-bf3e-3a38b03ddb12",
+    "metrics": {
+      "total_evaluations": 75,
+      "completed": 75,
+      "pass_rate": 1.0,
+      "failure_rate": 0.0,
+      "quality_score": 1.0,
+      "average_latency_ms": 29.162260002146166,
+      "p50_latency_ms": 27.376399957574904,
+      "p95_latency_ms": 43.863739958032966,
+      "p99_latency_ms": 44.26892004208639,
+      "cost_per_request": 0.0,
+      "cost_per_1k": 0.0,
+      "total_tokens": 882,
+      "error_count": 0,
+      "failures_by_category": {},
+      "models": {
+        "mock-baseline": {
+          "evaluations": 75,
+          "pass_rate": 1.0,
+          "p95_latency_ms": 43.863739958032966,
+          "cost_per_request": 0.0
+        }
+      }
+    }
+  },
+  "current": {
+    "run_id": "b7bcc3e1-84f2-44d5-9c20-e08c7b6c606a",
+    "metrics": {
+      "total_evaluations": 75,
+      "completed": 75,
+      "pass_rate": 0.7333333333333333,
+      "failure_rate": 0.2666666666666667,
+      "quality_score": 0.7333333333333333,
+      "average_latency_ms": 34.76489200101545,
+      "p50_latency_ms": 35.857200040481985,
+      "p95_latency_ms": 42.614530061837286,
+      "p99_latency_ms": 44.164320037234575,
+      "cost_per_request": 0.0,
+      "cost_per_1k": 0.0,
+      "total_tokens": 1012,
+      "error_count": 0,
+      "failures_by_category": {
+        "missing_information": 16,
+        "citation_failure": 40,
+        "retrieval_failure": 4
+      },
+      "models": {
+        "mock-degraded": {
+          "evaluations": 75,
+          "pass_rate": 0.7333333333333333,
+          "p95_latency_ms": 42.614530061837286,
+          "cost_per_request": 0.0
+        }
+      }
+    }
+  }
+}

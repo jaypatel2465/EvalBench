@@ -1,0 +1,42 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: evalbench
+      POSTGRES_USER: evalbench
+      POSTGRES_PASSWORD: evalbench-local
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U evalbench"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  backend:
+    build: .
+    environment:
+      DATABASE_URL: postgresql+psycopg://evalbench:evalbench-local@postgres:5432/evalbench
+      CORS_ORIGINS: http://localhost:5173,http://localhost:8080
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports: ["8000:8000"]
+  target:
+    build: .
+    command: ["uvicorn", "target_app.api.main:app", "--host", "0.0.0.0", "--port", "8001"]
+    environment:
+      DEFAULT_MODEL: mock-sec-qa-v1
+    ports: ["8001:8001"]
+  frontend:
+    build: ./frontend
+    depends_on: [backend]
+    ports: ["8080:80"]
+  ollama:
+    image: ollama/ollama:latest
+    profiles: ["local-model"]
+    volumes:
+      - ollama_data:/root/.ollama
+    ports: ["11434:11434"]
+volumes:
+  postgres_data:
+  ollama_data:

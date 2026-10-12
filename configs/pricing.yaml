@@ -1,0 +1,15 @@
+# Central pricing metadata. Hosted prices change; intentionally populate these from
+# provider pricing pages at deployment time. Empty pricing produces cost=null rather
+# than a fabricated estimate. Offline/local configurations explicitly use zero.
+updated_at: null
+currency: USD
+models:
+  mock-sec-qa-v1:
+    input_per_million: 0
+    output_per_million: 0
+    source: "Offline deterministic provider"
+  llama3.2:
+    input_per_million: 0
+    output_per_million: 0
+    source: "Self-hosted; infrastructure cost excluded"
+

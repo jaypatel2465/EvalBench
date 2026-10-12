@@ -1,0 +1,122 @@
+[
+  {
+    "id": "apple-2023-financials",
+    "company": "Apple",
+    "filing": "2023 Form 10-K",
+    "section": "Financial statements",
+    "text": "For fiscal 2023, Apple reported total net sales of $383.285 billion and net income of $96.995 billion. Americas net sales were $162.560 billion, Europe net sales were $94.294 billion, and Greater China net sales were $72.559 billion.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  },
+  {
+    "id": "apple-2023-products",
+    "company": "Apple",
+    "filing": "2023 Form 10-K",
+    "section": "Net sales by reportable segment and product",
+    "text": "Apple's fiscal 2023 products net sales were $298.085 billion and services net sales were $85.200 billion. iPhone net sales were $200.583 billion, Mac net sales were $29.357 billion, and iPad net sales were $28.300 billion.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  },
+  {
+    "id": "apple-2023-operations",
+    "company": "Apple",
+    "filing": "2023 Form 10-K",
+    "section": "Employees and research and development",
+    "text": "As of September 30, 2023, Apple had approximately 161,000 full-time equivalent employees. Research and development expense was $29.915 billion in 2023, compared with $26.251 billion in 2022.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  },
+  {
+    "id": "microsoft-2023-financials",
+    "company": "Microsoft",
+    "filing": "2023 Form 10-K",
+    "section": "Financial results",
+    "text": "Microsoft reported fiscal 2023 revenue of $211.915 billion, operating income of $88.523 billion, and net income of $72.361 billion. Diluted earnings per share were $9.68.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  },
+  {
+    "id": "microsoft-2023-segments",
+    "company": "Microsoft",
+    "filing": "2023 Form 10-K",
+    "section": "Segment results",
+    "text": "In fiscal 2023, Productivity and Business Processes revenue was $69.274 billion, Intelligent Cloud revenue was $87.907 billion, and More Personal Computing revenue was $54.734 billion. Intelligent Cloud was the largest segment by revenue.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  },
+  {
+    "id": "microsoft-2023-people",
+    "company": "Microsoft",
+    "filing": "2023 Form 10-K",
+    "section": "Human capital and R&D",
+    "text": "Microsoft employed approximately 221,000 people as of June 30, 2023: 120,000 in the United States and 101,000 internationally. Research and development expense was $27.195 billion in fiscal 2023.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  },
+  {
+    "id": "nvidia-2024-financials",
+    "company": "NVIDIA",
+    "filing": "2024 Form 10-K",
+    "section": "Financial results",
+    "text": "NVIDIA's fiscal 2024 revenue was $60.922 billion, up from $26.974 billion in fiscal 2023. Fiscal 2024 net income was $29.760 billion and diluted earnings per share were $11.93.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  },
+  {
+    "id": "nvidia-2024-platforms",
+    "company": "NVIDIA",
+    "filing": "2024 Form 10-K",
+    "section": "Platform revenue",
+    "text": "For fiscal 2024, NVIDIA Compute & Networking revenue was $47.405 billion and Graphics revenue was $13.517 billion. Data Center revenue reached $47.525 billion and Gaming revenue was $10.447 billion.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  },
+  {
+    "id": "nvidia-2024-operations",
+    "company": "NVIDIA",
+    "filing": "2024 Form 10-K",
+    "section": "Employees and R&D",
+    "text": "At January 28, 2024, NVIDIA had approximately 29,600 employees in 36 countries. Fiscal 2024 research and development expense was $8.675 billion. NVIDIA uses foundries such as TSMC and Samsung to manufacture wafers.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  },
+  {
+    "id": "alphabet-2023-financials",
+    "company": "Alphabet",
+    "filing": "2023 Form 10-K",
+    "section": "Financial results",
+    "text": "Alphabet reported 2023 revenues of $307.394 billion, income from operations of $84.293 billion, and net income of $73.795 billion. Diluted earnings per share were $5.80.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  },
+  {
+    "id": "alphabet-2023-segments",
+    "company": "Alphabet",
+    "filing": "2023 Form 10-K",
+    "section": "Revenue sources",
+    "text": "Alphabet's 2023 Google advertising revenues were $237.855 billion. Google Cloud revenues were $33.088 billion, and Google Cloud operating income was $1.716 billion, compared with an operating loss in 2022.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  },
+  {
+    "id": "alphabet-2023-operations",
+    "company": "Alphabet",
+    "filing": "2023 Form 10-K",
+    "section": "Employees and capital expenditures",
+    "text": "Alphabet had 182,502 employees as of December 31, 2023. Purchases of property and equipment were $32.251 billion in 2023. The company expects technical infrastructure investment to remain an important use of capital.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  },
+  {
+    "id": "amazon-2023-financials",
+    "company": "Amazon",
+    "filing": "2023 Form 10-K",
+    "section": "Financial results",
+    "text": "Amazon's 2023 net sales were $574.785 billion, operating income was $36.852 billion, and net income was $30.425 billion. Net sales increased from $513.983 billion in 2022.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  },
+  {
+    "id": "amazon-2023-segments",
+    "company": "Amazon",
+    "filing": "2023 Form 10-K",
+    "section": "Segment results",
+    "text": "AWS net sales were $90.757 billion in 2023 and AWS operating income was $24.631 billion. North America net sales were $352.828 billion, while International net sales were $131.200 billion.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  },
+  {
+    "id": "amazon-2023-operations",
+    "company": "Amazon",
+    "filing": "2023 Form 10-K",
+    "section": "Employees and capital investment",
+    "text": "Amazon employed approximately 1,525,000 full-time and part-time employees as of December 31, 2023. Cash capital expenditures, including equipment acquired under finance leases, were $48.145 billion in 2023.",
+    "source_note": "Curated excerpt derived from the company's public annual filing; verify against the filing before production use."
+  }
+]
