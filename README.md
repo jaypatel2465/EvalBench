@@ -207,3 +207,9 @@ The tests cover scoring, dataset validation/diffing, bootstrap regression classi
 - Provider token accounting differs. Missing usage remains `null`; Ollama/local dollar cost excludes infrastructure.
 - Judge calibration requires real human ratings and a configured judge before the reliability page can support decisions.
 - Production deployments should add authentication, object storage for large traces, retention policies, and background job ownership.
+
+## 👤 Author
+
+Jay Patel
+---
+
